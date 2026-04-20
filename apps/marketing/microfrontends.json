@@ -1,5 +1,5 @@
 {
-    "$schema": "https://openai.vercel.sh/microfrontends.json",
+    "$schema": "https://openapi.vercel.sh/microfrontends.json",
     "applications":{
         "@acme/marketing":{
             "development":{
@@ -27,5 +27,8 @@
                 "local": 3002
             }        
         }
+    },
+    "options":{
+        "localProxyPort": 3024
     }
 }
