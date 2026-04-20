@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
+import { withMicrofrontends } from "@vercel/microfrontends/next/config";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // No basePath - dashboard handles both /app/* and /settings/* routes
 };
 
-export default nextConfig;
+export default withMicrofrontends(nextConfig);

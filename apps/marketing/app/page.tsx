@@ -2,16 +2,16 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1 className="text-6xl font-bold text-gray-900 dark:text-white">
+    <div className="flex flex-col items-center justify-center min-h-[80vh] p-8">
+      <h1 className="text-4xl font-bold mb-4">
         Welcome to Acme Platform
       </h1>
-      <p className="mt-3 text-2xl text-gray-600 dark:text-gray-300">
+      <p className="text-gray-600 mb-8 text-center max-w-md">
         The everything platform for your business
       </p>  
       <nav className = "flex gap-4">
-        <a href="/pricing" className = "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">Pricing</a>
-        <a href="/docs" className = "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 ">Documentation</a>
+        <a href="/pricing" className = "px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Pricing</a>
+        <a href="/docs" className = "px-4 py-2 border border-gray-300 rounded hover:bg-gray-500 ">Documentation</a>
       </nav>
     </div>
   );
