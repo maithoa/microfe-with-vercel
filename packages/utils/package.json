@@ -1,0 +1,17 @@
+{
+    "name": "@acme/utils",
+    "version": "0.0.0",
+    "private": true,
+    "exports": {
+        ".": {
+            "types": "./src/index.ts",
+            "default": "./src/index.ts"
+        }
+    },
+    "devDependencies": {
+        "typescript": "^6.0.3"
+    },
+    "dependencies": {
+        "jwt-decode": "^4.0.0"
+    }
+}

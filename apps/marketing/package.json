@@ -3,20 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3000",
-    "build": "next build",
+    "clean": "rm -rf .next",
+    "dev": "pnpm clean && next dev --port 3000",
+    "build": "pnpm clean && next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@acme/ui": "workspace:*",
+    "@acme/utils": "workspace:*",
     "@vercel/microfrontends": "^2.3.2",
     "next": "16.2.4",
+    "postcss": "^8.5.10",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
+    "@tailwindcss/postcss": "^4.2.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

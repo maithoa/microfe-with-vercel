@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Header } from "@acme/ui";
+import { Header, Footer } from "@acme/ui";
 import "./globals.css";
 
 
@@ -16,10 +16,11 @@ export default function RootLayout({
   return (
     <html
       lang="en">
-     <body className="min-h-screen bg-white flex flex-col">
-       <Header />
-       <main className ="flex-1">{children}</main>
-     </body>
+     <body className="min-h-screen bg-white flex flex-col items-center">
+        <Header />
+        <main className = "flex-1 w-full flex flex-col items-center">{children}</main>      
+        <Footer />
+      </body>
     </html>
   );
 }
