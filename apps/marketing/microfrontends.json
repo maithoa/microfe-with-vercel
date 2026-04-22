@@ -20,7 +20,7 @@
                 "local": 3001
             }
         },
-        "acme-dashboard":{
+        "_disabled_acme-dashboard":{
             "packageName": "@acme/dashboard",
             "routing":[
                 {
