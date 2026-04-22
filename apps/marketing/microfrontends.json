@@ -4,9 +4,10 @@
         "@acme-marketing":{
             "packageName": "@acme/marketing",
             "development":{
-                "fallback": "http://localhost:3000",
+                "fallback": "acme-marketing-bice.vercel.app",
                 "local": 3000
-            }
+            }, 
+          
         },
         "@acme-docs":{
             "packageName": "@acme/docs",
@@ -33,5 +34,6 @@
     },
     "options":{
         "localProxyPort": 3024
-    }
+    },
+    
 }
