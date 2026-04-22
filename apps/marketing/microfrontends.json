@@ -1,13 +1,15 @@
 {
     "$schema": "https://openapi.vercel.sh/microfrontends.json",
     "applications":{
-        "@acme/marketing":{
+        "@acme-marketing":{
+            "packageName": "@acme/marketing",
             "development":{
                 "fallback": "http://localhost:3000",
                 "local": 3000
             }
         },
-        "@acme/docs":{
+        "@acme-docs":{
+            "packageName": "@acme/docs",
             "routing":[
                 {
                     "paths": ["/docs", "/docs/:path*"]
@@ -17,7 +19,8 @@
                 "local": 3001
             }
         },
-        "@acme/dashboard":{
+        "@acme-dashboard":{
+            "packageName": "@acme/dashboard",
             "routing":[
                 {
                     "paths": ["/app", "/app/:path*", "/settings", "/settings/:path*"]
