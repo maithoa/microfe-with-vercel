@@ -19,18 +19,8 @@
             "development":{
                 "local": 3001
             }
-        },
-        "_disabled_acme-dashboard":{
-            "packageName": "@acme/dashboard",
-            "routing":[
-                {
-                    "paths": ["/app", "/app/:path*", "/settings", "/settings/:path*"]
-                }
-            ],
-            "development":{
-                "local": 3002
-            }        
         }
+       
     },
     "options":{
         "localProxyPort": 3024
