@@ -1,7 +1,9 @@
+import { SpeculationRules } from "./speculation-rules";
+
 export function Header() {
     return (
         <header className="w-full h-16 border-b bg-white px-6">
-          
+            <SpeculationRules />
             <div className="max-w-6xl mx-auto h-full flex items-center justify-between">
                 {/* Logo + Nav... */}
                 <div className="flex items-center gap-8">

@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
       permanent: true,
     },
   ],
+
+  experimental: {
+    // multiZoneDraftMode sync states between host app and remote app
+    multiZoneDraftMode: true,
+  }
 };
 
 export default withMicrofrontends(nextConfig);

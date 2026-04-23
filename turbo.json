@@ -1,5 +1,6 @@
 {
     "$schema": "https://turbo.build/schema.json",
+    "globalPassThroughEnv": ["VC_MICROFRONTENDS_CONFIG"],
     "tasks": {
         "build": {
             "dependsOn": ["^build"],
