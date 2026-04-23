@@ -2,8 +2,9 @@
     "name": "acme-platform",
     "private": true,
     "scripts": {
-        "dev": "turbo dev ",
+        "dev": "turbo dev",
         "build": "turbo build",
+        "test": "turbo test",
         "lint": "turbo lint"
     },
     "devDependencies": {

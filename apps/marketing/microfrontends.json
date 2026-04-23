@@ -1,29 +1,45 @@
 {
     "$schema": "https://openapi.vercel.sh/microfrontends.json",
-    "applications":{
-        "acme-marketing":{
-            "packageName": "@acme/marketing",
-            "development":{
-                "fallback": "acme-marketing-bice.vercel.app",
-                "local": 3000
-            }
-          
-        },
-        "acme-docs":{
-            "packageName": "@acme/docs",
-            "routing":[
+    "applications": {
+        "acme-dashboard": {
+            "packageName": "@acme/dashboard",
+            "routing": [
                 {
-                    "paths": ["/docs", "/docs/:path*"]
+                    "paths": [
+                        "/app",
+                        "/app/:path*",
+                        "/settings",
+                        "/settings/:path*"
+                    ]
                 }
             ],
-            "development":{
+            "development": {
+                "local": 3002
+            }
+        },
+        "acme-docs": {
+            "packageName": "@acme/docs",
+            "routing": [
+                {
+                    "paths": [
+                        "/docs",
+                        "/docs/:path*"
+                    ]
+                }
+            ],
+            "development": {
                 "local": 3001
             }
+        },
+        "acme-marketing": {
+            "packageName": "@acme/marketing",
+            "development": {
+                "local": 3000,
+                "fallback": "http://localhost:3000"
+            }
         }
-       
     },
-    "options":{
+    "options": {
         "localProxyPort": 3024
     }
-    
 }
