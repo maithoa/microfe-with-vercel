@@ -4,7 +4,6 @@ export default function DocsHomePage() {
       <h1 className="text-3xl font-bold mb-2">Documentation</h1>
       <p className="text-gray-600 mb-8">
         Everything you need to build with Acme Platform.
-        apps/docs/app/page.tsx
       </p>
       <div className="grid gap-4">
         <a href="/docs/getting-started" className="block p-4 border rounded-lg hover:border-blue-500">

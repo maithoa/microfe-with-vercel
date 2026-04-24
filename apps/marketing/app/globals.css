@@ -1,33 +1,14 @@
 @import "tailwindcss";
-@import "../../../packages/ui/src/styles/tokens.css";
+@import "../../../packages/ui/src/styles/base.css";
 
-@source "../../../packages/ui/src/**/*.{ts,tsx}"; 
+@source "../../../packages/ui/src/**/*.{ts,tsx}";
 @source "./**/*.{ts,tsx}";
 
+/* marketing: pure white — public storefront */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-display: var(--font-display);
-  --font-mono: var(--font-geist-mono);
-  --shadow-flat: 4px 4px 0px #000;
-  --shadow-flat-lg: 6px 6px 0px #000;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #fff;
-    --foreground: #000;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), sans-serif;
+  :root { --background: #0f0f0f; }
 }

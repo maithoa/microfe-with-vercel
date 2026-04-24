@@ -1,9 +1,10 @@
 import { SpeculationRules } from "./speculation-rules";
 import { NavLink } from "./nav-link";
+import { Button} from "./button"
 
 export function Header() {
     return (
-        <header className="w-full h-16 border-b-3 bg-white px-6">
+        <header className="w-full h-16 border-b-2 px-6">
             <SpeculationRules />
             <div className="max-w-6xl mx-auto h-full flex items-center justify-between">
                 {/* Logo + Nav... */}
@@ -17,19 +18,12 @@ export function Header() {
                 </div>
                 {/* Button... */}
                 <div className="flex items-center">
-                    <a href="/app" className="px-4 py-2 
-                    border-2 border-black bg-pink-500 text-black
-                    rounded
-                    shadow-flat
-                    hover:-translate-x-0.5 hover:-translate-y-0.5
-                    hover:shadow-flat-lg
-                    transition-all duration-150
-                    ">
+                    <Button href="/app" variant="primary">
                         Dashboard
-                    </a>
-                    
+                    </Button>
                 </div>
             </div>
         </header>
     );
 }
+                    

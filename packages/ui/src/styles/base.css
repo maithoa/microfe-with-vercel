@@ -1,0 +1,53 @@
+/* Design tokens */
+:root {
+  --color-pink: #FF90E8;
+  --color-yellow: #FFC900;
+  /* surface shadows: inverts in dark mode */
+  --shadow-flat: 4px 4px 0px var(--shadow-color);
+  --shadow-flat-lg: 6px 6px 0px var(--shadow-color);
+  --border: 2px solid var(--border-color);
+  /* accent shadows: contrast against page background, not button fill
+     light mode → black (visible on white page)
+     dark mode  → overridden in @media below (visible on black page) */
+  --shadow-color-on-accent: #000;
+  --shadow-flat-accent: 4px 4px 0px var(--shadow-color-on-accent);
+  --shadow-flat-accent-lg: 6px 6px 0px var(--shadow-color-on-accent);
+  --border-accent: 2px solid var(--shadow-color-on-accent);
+}
+
+/* Default values — each app overrides in their own :root */
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+  --shadow-color: #000000;
+  --border-color: #000000;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-pink: var(--color-pink);
+  --color-yellow: var(--color-yellow);
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-geist-mono);
+  --shadow-flat: var(--shadow-flat);
+  --shadow-flat-lg: var(--shadow-flat-lg);
+  --shadow-flat-accent: var(--shadow-flat-accent);
+  --shadow-flat-accent-lg: var(--shadow-flat-accent-lg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #ffffff;
+    --shadow-color: #ffffff;
+    --border-color: #f01a1d;
+    --shadow-color-on-accent: #1a6cf0;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}

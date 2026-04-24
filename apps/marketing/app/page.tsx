@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Button } from "@acme/ui";
 
 export default function Home() {
   return (
@@ -10,8 +11,8 @@ export default function Home() {
         The everything platform for your business
       </p>  
       <nav className = "flex gap-4">
-        <a href="/pricing" className = "px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Pricing</a>
-        <a href="/docs" className = "px-4 py-2 border border-gray-300 rounded hover:bg-gray-500 ">Documentation</a>
+        <Button href="/pricing" variant="primary">Pricing</Button>
+        <Button href="/docs" variant="secondary">Documentation</Button>
       </nav>
     </div>
   );

@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   description: "Dashboard for Managing Acme Platform",
 };
 
+const dmSerifDisplay = DM_Serif_Display({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-display",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -16,7 +27,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"> 
-      <body className="min-h-screen bg-white flex flex-col items-center">
+      <body className={`min-h-screen bg-white flex flex-col items-center ${dmSerifDisplay.variable} ${dmSans.variable}`}>
         <Header />
         <main className = "flex-1 w-full flex flex-col items-center">{children}</main>      
         <Footer />
