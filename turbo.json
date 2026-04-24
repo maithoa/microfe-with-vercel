@@ -1,20 +1,28 @@
 {
     "$schema": "https://turbo.build/schema.json",
-    "globalPassThroughEnv": ["VC_MICROFRONTENDS_CONFIG"],
     "tasks": {
         "build": {
-            "dependsOn": ["^build"],
-            "outputs": [".next/**", "!.next/cache/**"]
+            "dependsOn": [
+                "^build"
+            ],
+            "outputs": [
+                ".next/**",
+                "!.next/cache/**"
+            ]
         },
         "dev": {
             "cache": false,
             "persistent": true
         },
         "lint": {
-            "dependsOn": ["^lint"]
+            "dependsOn": [
+                "^lint"
+            ]
         },
-        "test":{
-            "dependsOn": ["^build"]
+        "test": {
+            "dependsOn": [
+                "^build"
+            ]
         }
     }
 }

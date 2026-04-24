@@ -3,7 +3,7 @@ import { withMicrofrontends } from "@vercel/microfrontends/next/config"
 
 const nextConfig: NextConfig = {
   /* config options here */
-  redirects: async() => [
+  redirects: async () => [
     {
       source: "/documentation",
       destination: "/docs",
