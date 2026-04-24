@@ -1,6 +1,7 @@
+import { NavLink } from "./nav-link";
 export function Footer() {
     return (
-        <footer className="w-full border-t bg-gray-50 px-6 py-12">
+        <footer className="w-full border-t-3 px-6 py-12">
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col md:flex-row justify-between gap-10">
                     <div className="space-y-2">
@@ -16,16 +17,17 @@ export function Footer() {
                         <div>
                             <p className="font-semibold text-gray-900 mb-4">Product</p>
                             <nav className="flex flex-col gap-3 text-sm text-gray-600">
-                                <a href="/pricing" className="transition-colors hover:text-black">Pricing</a>
-                                <a href="/docs" className="transition-colors hover:text-black">Documentation</a>
+                                <NavLink href="/pricing">Pricing</NavLink>
+                                <NavLink href="/docs">Documentation</NavLink>
                             </nav>
                         </div>
                         <div>
                             <p className="font-semibold text-gray-900 mb-4">Company</p>
                             <nav className="flex flex-col gap-3 text-sm text-gray-600">
-                                <a href="/about" className="transition-colors hover:text-black">About Us</a>
-                                <a href="/contact" className="transition-colors hover:text-black">Contact</a>
+                                <NavLink href="/about">About Us</NavLink>
+                                <NavLink href="/contact">Contact</NavLink>
                             </nav>
+                            
                         </div>
                     </div>
                 </div>
@@ -36,3 +38,5 @@ export function Footer() {
         </footer>
     );
 }
+
+

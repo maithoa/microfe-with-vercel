@@ -1,0 +1,7 @@
+:root {
+  --color-pink: #FF90E8;
+  --color-yellow: #FFC900;
+  --shadow-flat: 4px 4px 0px #000;
+  --shadow-flat-lg: 6px 6px 0px #000;
+  --border: 2px solid #000;
+}

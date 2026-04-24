@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Header, Footer } from "@acme/ui";
 import "./globals.css";
+import { DM_Serif_Display, DM_Sans } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Acme Dashboard",
